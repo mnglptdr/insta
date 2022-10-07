@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  root "pic#index"
+  devise_for :users
+  root "pics#index"
   resources :pics 
 end
